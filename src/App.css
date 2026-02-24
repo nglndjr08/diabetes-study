@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #222;
+}
+
+.page-wrapper {
+  max-width: 1200px;   /* controls total layout width */
+  margin: 0 auto;      /* centers the whole layout */
+  padding: 40px 30px;
+}
+
+/* Full-width title */
+.page-title {
+  margin-bottom: 40px;
+  max-width: 1500px;
+  font-weight: 600;
+}
+
+/* Flex layout for sidebar + content */
+.container {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  position: sticky;
+  top: 40px;
+}
+
+/* Next Steps card */
+.next-steps {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+/* Button */
+button {
+  background-color: #d62828;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  max-width: 850px;
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 60px;
+}
+
+/* Contents list */
+.contents-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.contents-list li {
+  margin-bottom: 10px;
+}
+
+.contents-list a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.contents-list a:hover {
+  color: #d62828;
+}
+
+.contents-list a:active {
+  color: #d62828;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ========================= */
+/* ABOUT SECTION (FLOAT) */
+/* ========================= */
+
+#about h3 {
+  margin-bottom: 18px;
+}
+
+.about-image {
+  float: right;
+  width: 260px;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+#about p {
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+/* Clear float */
+#about::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ========================= */
+/* RESEARCH SECTION */
+/* ========================= */
+
+#research {
+  margin-top: 40px;
+}
+
+.research-card {
+  width: 300px;
+  height: 120px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.research-card.red {
+  background-color: #d83a2e;
+}
+
+.research-card.blue {
+  background-color: #112a63;
+}
+
+.research-title {
+  font-weight: 500;
+  text-decoration: underline;
+  margin-bottom: 8px;
+}
+
+.approval-text {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+}
